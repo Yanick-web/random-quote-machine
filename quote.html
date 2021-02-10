@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<title>Random Quote Machine</title>
+	<style type="text/css">
+		*, *::before, *::after{
+			box-sizing: border-box;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			
+			$("#quote-box").css("border", "none");
+			$("#quote-box").css("width", "50%");
+			$("#quote-box").css("height", "auto");
+			$("#quote-box").css("margin-top", "20vh");
+			$("#quote-box").css("margin-left", "20vw");
+			$("#quote-box").css("padding", "2rem");
+			$("#quote-box").css("border-radius", ".5rem");
+			$("#quote-box").css("background-color", "white");
+			$("#links").css("padding", "1rem");
+			$("#links").css("width", "100%");
+			$("#links a").css("text-decoration", "none");
+			$("#links a").css("border-radius", ".5rem");
+			$("#links a").css("padding", ".5rem");
+			$("#links a").css("color", "white");
+			$("#links a:nth-child(1)").css("border", "none");
+			$("#links a:nth-child(1)").css("margin-right", "5rem");
+			$("#links a:nth-child(2)").css("border", "none");
+
+
+
+
+		});
+	</script>
+</head>
+<body>
+<div class="container-fluid">
+	<div  id="quote-box" class="text-center">
+	<div id="text">
+		
+	</div>
+
+	<div id="author">
+		<p></p>
+	</div>
+	<div id="links">
+		<a id="tweet-quote" target="_blank"><i class="fa fa-twitter"></i></a>
+		<a id="new-quote" href="#">New Quote</a>
+
+	</div>
+	</div>
+</div>
+
+<script src="./quote.js"></script>
+</body>
+</html>
